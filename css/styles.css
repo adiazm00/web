@@ -25,6 +25,10 @@ ul{
     list-style: inside;
 }
 
+#lista-tooltip{
+    margin-bottom: 10px;
+}
+
 li{
     margin-bottom: 10px;
     font-size: 18px;
@@ -207,8 +211,6 @@ li{
     outline: none;
     color: var(--text);
     transform: rotate(calc(var(--rotate) * 1deg)) translateZ(0);
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
 .button:hover{
@@ -317,7 +319,7 @@ li{
     overflow: hidden;
     text-align: justify;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .subtitle{
@@ -351,16 +353,13 @@ li{
 .cta{
     color-scheme: light only;
     padding: 20px 30px;
-    max-width: fit-content;
     display: block;
-    margin-bottom: 40px;
     background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     font-weight: 700;
     color: #232141;
     text-decoration: none;
     border-radius: 7px;
     box-shadow: 0 8px 8px #00000033;
-    transition: all 0.3s ease 0s;
 }
 .cta:hover{
     background: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
@@ -1189,7 +1188,7 @@ li{
 
     .card{
         margin-bottom: 40px;
-        width: 65%;
+        width: 80%;
     }
 
     .card__title{
