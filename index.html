@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    Cache-Control: max-age=31536000
 </head>
 
 <body>    
@@ -19,13 +20,13 @@
                 <div class="links">
                     <a href="#sobre-mi" class="link">Sobre mí</a>
                     <a href="#habilidades" class="link">Habilidades</a>
-                    <a href="#proyectos" class="link">Portfolio</a>
+                    <a href="#portfolio" class="link">Portfolio</a>
                     <a href="#contacto" class="link link--active">Contacto</a>
                 </div>
             </header>
 
             <div class="cabecera__textos">
-                <img src="img/profile-icon.png" id="personal_icon">
+                <img src="img/profile-icon.webp" id="personal_icon" alt="Imagen personal" width="300" height="300">
                 <h1 class="title">Alberto Díaz Martín</h1> 
                 <p class="sub_title">Ingeniero Técnico Informático </p>
                 <a href="img\cv-Alberto_Díaz_Martín.pdf" download target="_blank">
@@ -90,7 +91,7 @@
 
     <main>
         <a href="#">
-            <img src="img/arrow.svg" class="flecha-arriba">
+            <img src="img/arrow.svg" class="flecha-arriba" alt="Flecha para subir">
         </a>
 
         <section id="sobre-mi">
@@ -105,11 +106,11 @@
                 <div class="sm_img">
                     <a href="https://www.esi.uclm.es" target="_blank">
                         <li class="tooltip expand" data-title="Ir a www.esi.uclm.es">
-                            <img src="img/esi.svg" class="logo_esi">
+                            <img src="img/esi.svg" class="logo_esi" alt="Logo ESI Ciudad Real">
                         </li>
                     </a>
                     <a href="https://www.uclm.es" target="_blank">
-                        <li class="tooltip expand" data-title="Ir a www.uclm.es">
+                        <li class="tooltip expand" data-title="Ir a www.uclm.es" alt="Logo UCLM">
                             <img src="img/uclm.svg" class="logo_uclm">
                         </li>
                     </a>
@@ -145,28 +146,30 @@
                     </div>
 
                     <p class="copy__section"> Además, he recibido formación complementaria en las siguientes plataformas:
-                        <li>Diseño de diagramas para desarrollo de software (Clases, Casos de Uso, CTT, navegación, etc.)</li>
-                        <li>Gestión y personalización de plataformas e-commerce con Prestashop </li>
-                        <li>Aplicaciones web con Ruby On Rails </li>
-                        <li>Diseño de bocetos o mockups con Balsamiq </li>
-                        <li>Modelado de procesos BPMN (curso "Mi Primer Proceso" de Bizagi)</li>
-                        <li>Tratamiento de archivos formateados (XML, JSON)</li>
+                        <ul>
+                            <li>Diseño de diagramas para desarrollo de software (Clases, Casos de Uso, CTT, navegación, etc.)</li>
+                            <li>Gestión y personalización de plataformas e-commerce con Prestashop </li>
+                            <li>Aplicaciones web con Ruby On Rails </li>
+                            <li>Diseño de bocetos o mockups con Balsamiq </li>
+                            <li>Modelado de procesos BPMN (curso "Mi Primer Proceso" de Bizagi)</li>
+                            <li>Tratamiento de archivos formateados (XML, JSON)</li>
+                        </ul>
                     </p>
-                    <br>
                     <p class="copy__section"> Y otras en menor medida como:
-                        <li>Gestión de Bases de Datos (SQL y Firebase)</li>
-                        <li>Diseño y configuración de redes con Packet Tracer</li>
-                        <li>Programación de sistemas distribuidos en Python</li>
-                        <li>Prácticas orientadas a las matemáticas y estadística con Maxima y R Studio</li>
+                        <ul>
+                            <li>Gestión de Bases de Datos (SQL y Firebase)</li>
+                            <li>Diseño y configuración de redes con Packet Tracer</li>
+                            <li>Programación de sistemas distribuidos en Python</li>
+                            <li>Prácticas orientadas a las matemáticas y estadística con Maxima y R Studio</li>
+                        </ul>
                     </p>
-
                 <h3 class="h_notec">No técnicas</h3>
                     <p class="copy__section">Me considero una persona activa y trabajadora, que no tiene problema a la hora de asumir responsabilidades
                         y trabajar en equipo. Dispongo de nivel B2 en inglés por Cambridge y permiso de conduccción tipo B.</p>
             </div>  
         </section>
 
-        <section class="portfolio" id="portfolio">
+        <section id="portfolio">
             <div class="container">
                 <h2 class="subtitle">Portfolio</h2>
                 <p class="copy__section">Algunos de los proyectos en los que he trabajado son:</p>
@@ -176,15 +179,15 @@
                             <div class="slide-inner">
                                 <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
                                 <div class="slide-item">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146641324-84097a04-7ebc-4d15-a40a-07360fb76611.png">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146641324-84097a04-7ebc-4d15-a40a-07360fb76611.png" alt="Imagen de carrousel">
                                 </div>
                                 <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
                                 <div class="slide-item">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146641359-b822c7b8-9287-40b9-a404-c747a28f4463.png">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146641359-b822c7b8-9287-40b9-a404-c747a28f4463.png" alt="Imagen de carrousel">
                                 </div>
                                 <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
                                 <div class="slide-item">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146641407-f13afe0e-1bd1-409a-9247-61ad9a285bb2.png">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146641407-f13afe0e-1bd1-409a-9247-61ad9a285bb2.png" alt="Imagen de carrousel">
                                 </div>
                                 <label for="slide-3" class="slide-control prev control-1">‹</label>
                                 <label for="slide-2" class="slide-control next control-1">›</label>
@@ -207,7 +210,7 @@
                         </div>
                         <div class="cards__text">
                             <p class="card__list">Java, Swing</p>
-                            <h4 class="card__title">Acampa2</h4>
+                            <h3 class="card__title">Acampa2</h3>
                             <p class="card__copy">Simulación de sistema de gestión de un camping</p>
                             <a href="https://github.com/adiazm00/Acampa2" target="_blank" class="card__button">Acceso al código fuente</a>
                         </div>
@@ -218,15 +221,15 @@
                             <div class="slide-inner2">
                                 <input class="slide-open2" type="radio" id="slide-12" name="slide2" aria-hidden="true" hidden="" checked="checked">
                                 <div class="slide-item2">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146640522-d2101074-59ef-4d73-a02b-4d929823c4e3.png">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146640522-d2101074-59ef-4d73-a02b-4d929823c4e3.png" alt="Imagen de carrousel">
                                 </div>
                                 <input class="slide-open2" type="radio" id="slide-22" name="slide2" aria-hidden="true" hidden="">
                                 <div class="slide-item2">
-                                    <img src=" https://user-images.githubusercontent.com/96338110/146640425-340c0a56-e019-4d93-9d52-f87084445d00.png">
+                                    <img src=" https://user-images.githubusercontent.com/96338110/146640425-340c0a56-e019-4d93-9d52-f87084445d00.png" alt="Imagen de carrousel">
                                 </div>
                                 <input class="slide-open2" type="radio" id="slide-32" name="slide2" aria-hidden="true" hidden="">
                                 <div class="slide-item2">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146640504-a63f5661-c68e-46e9-8492-0f64c383530b.png">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146640504-a63f5661-c68e-46e9-8492-0f64c383530b.png" alt="Imagen de carrousel">
                                 </div>
                                 <label for="slide-32" class="slide-control2 prev control-12">‹</label>
                                 <label for="slide-22" class="slide-control2 next control-12">›</label>
@@ -259,15 +262,15 @@
                             <div class="slide-inner3">
                                 <input class="slide-open3" type="radio" id="slide-13" name="slide3" aria-hidden="true" hidden="" checked="checked">
                                 <div class="slide-item3">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146642298-ff0e1f48-771d-465f-8822-2867a6a064b4.jpg">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146642298-ff0e1f48-771d-465f-8822-2867a6a064b4.jpg" alt="Imagen de carrousel">
                                 </div>
                                 <input class="slide-open3" type="radio" id="slide-23" name="slide3" aria-hidden="true" hidden="">
                                 <div class="slide-item3">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146642303-e74aeb0f-7fdd-4bbb-9100-b3b10a647d5b.jpg">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146642303-e74aeb0f-7fdd-4bbb-9100-b3b10a647d5b.jpg" alt="Imagen de carrousel">
                                 </div>
                                 <input class="slide-open3" type="radio" id="slide-33" name="slide3" aria-hidden="true" hidden="">
                                 <div class="slide-item3">
-                                    <img src="https://user-images.githubusercontent.com/96338110/146642308-1cb52685-4496-4e0b-b5e2-babb6a048c1e.jpg">
+                                    <img src="https://user-images.githubusercontent.com/96338110/146642308-1cb52685-4496-4e0b-b5e2-babb6a048c1e.jpg" alt="Imagen de carrousel">
                                 </div>
                                 <label for="slide-33" class="slide-control3 prev control-13">‹</label>
                                 <label for="slide-23" class="slide-control3 next control-13">›</label>
