@@ -321,6 +321,12 @@ li{
     transform: translateX(-100%);
     transition: all 1s;
 }
+.hdn{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transition-delay: 100ms;
+}
 
 .show{
     opacity: 1;
