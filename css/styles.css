@@ -1100,7 +1100,7 @@ li {
     }
 
     .card {
-        width: 80%
+        width: 85%;
     }
 
     .card__title {
@@ -1142,8 +1142,24 @@ li {
     }
 }
 
-@media only screen and (max-height:600px) {
+@media screen and (max-height:600px) {
     #personal_icon {
         visibility: hidden
+    }
+}
+
+@media screen and (max-width:600px) {
+    .skillcard {
+        width: 100%;
+        margin: 20px 0 30px 0;
+        box-shadow: none;
+    }
+
+    .sm_img {
+        flex-direction: column !important;
+    }
+
+    #lista-tooltip {
+        margin-left: 0 !important;
     }
 }
